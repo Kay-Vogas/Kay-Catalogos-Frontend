@@ -1,110 +1,128 @@
- 
-:root {
-    --cor-fundo: #0D1117;            
-    --cor-card: #161B22;           
-    --cor-texto-principal: #E6EDF3;  
-    --cor-texto-secundario: #8B949E; 
-    --cor-header: #605496;          
-    --cor-texto-header: #FFFFFF;      
-    --cor-titulo-categoria: #605496;  
-    --cor-destaque-tag: #6f688c;      
-    --cor-texto-tag: #FFFFFF;        
-    --cor-borda: #30363D;           
-}
- 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto-principal);
-}
+ :root {
+     --cor-fundo: #0D1117;
+     --cor-card: #161B22;
+     --cor-texto-principal: #E6EDF3;
+     --cor-texto-secundario: #8B949E;
+     --cor-header: #605496;
+     --cor-texto-header: #FFFFFF;
+     --cor-titulo-categoria: #605496;
+     --cor-destaque-tag: #6f688c;
+     --cor-texto-tag: #FFFFFF;
+     --cor-borda: #30363D;
+ }
 
-header {
-    background-color: var(--cor-header);
-    color: var(--cor-texto-header);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid var(--cor-borda);
-}
+ body {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: var(--cor-fundo);
+     color: var(--cor-texto-principal);
+ }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
+ header {
+     background-color: var(--cor-header);
+     color: var(--cor-texto-header);
+     padding: 20px;
+     text-align: center;
+     border-bottom: 2px solid var(--cor-borda);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
 
- 
-main {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
+ header h1 {
+     margin: 0;
+     font-size: 2em;
+ }
 
- 
-.category-section {
-    margin-bottom: 40px;
-}
 
-.category-section h2 {
-    font-size: 1.8em;
-    color: var(--cor-titulo-categoria);
-    border-bottom: 3px solid var(--cor-titulo-categoria);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+ main {
+     max-width: 1200px;
+     margin: 30px auto;
+     padding: 0 20px;
+ }
 
- 
-.game-list-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px; /* Espaçamento entre os cards */
-}
 
- 
-.game-card {
-    background-color: var(--cor-card);
-    border-radius: 8px;
-    overflow: hidden; 
-    border: 1px solid var(--cor-borda);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
+ .category-section {
+     margin-bottom: 40px;
+ }
 
-.game-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--cor-destaque-tag); /* Destaca a borda com o azul */
-}
+ .category-section h2 {
+     font-size: 1.8em;
+     color: var(--cor-titulo-categoria);
+     border-bottom: 3px solid var(--cor-titulo-categoria);
+     padding-bottom: 10px;
+     margin-bottom: 20px;
+ }
 
-.game-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-    border-bottom: 1px solid var(--cor-borda);
-}
 
-.game-card h3 {
-    color: var(--cor-texto-principal);
-    padding: 0 15px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
+ .game-list-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     gap: 25px;
+ }
 
-.game-card .genre-tag {
-    background-color: var(--cor-destaque-tag);
-    color: var(--cor-texto-tag);
-    font-size: 12px;
-    font-weight: bold;
-    padding: 3px 10px;
-    border-radius: 12px;
-    display: inline-block;
-    margin-left: 15px;
-}
 
-.game-card p {
-    font-size: 14px;
-    color: var(--cor-texto-secundario);
-    padding: 0 15px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
+ .game-card {
+     background-color: var(--cor-card);
+     border-radius: 8px;
+     overflow: hidden;
+     border: 1px solid var(--cor-borda);
+     transition: transform 0.3s ease, border-color 0.3s ease;
+ }
+
+ .game-card:hover {
+     transform: translateY(-5px);
+     border-color: var(--cor-destaque-tag);
+ }
+
+ .game-card img {
+     width: 100%;
+     height: 160px;
+     object-fit: cover;
+     display: block;
+     border-bottom: 1px solid var(--cor-borda);
+ }
+
+ .game-card h3 {
+     color: var(--cor-texto-principal);
+     padding: 0 15px;
+     margin-top: 15px;
+     margin-bottom: 5px;
+ }
+
+ .game-card .genre-tag {
+     background-color: var(--cor-destaque-tag);
+     color: var(--cor-texto-tag);
+     font-size: 12px;
+     font-weight: bold;
+     padding: 3px 10px;
+     border-radius: 12px;
+     display: inline-block;
+     margin-left: 15px;
+ }
+
+ .game-card p {
+     font-size: 14px;
+     color: var(--cor-texto-secundario);
+     padding: 0 15px;
+     margin-top: 10px;
+     margin-bottom: 15px;
+     line-height: 1.5;
+ }
+
+ .admin-link-btn {
+     display: inline-block;
+     padding: 10px 15px;
+     background-color: var(--cor-titulo-categoria, #F06292);
+     color: var(--cor-texto-header, #FFFFFF);
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 5px;
+     font-size: 14px;
+     transition: background-color 0.3s ease;
+ }
+
+ .admin-link-btn:hover {
+     background-color: #e94f82;
+ }

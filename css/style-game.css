@@ -1,6 +1,4 @@
-/* =================================== */
-/* CSS ORIGINAL (Copiado 1-para-1)    */
-/* =================================== */
+
 :root {
     --cor-fundo: #0D1117;          
     --cor-card: #161B22;          
@@ -54,11 +52,7 @@ main {
     margin-right: 5px;
 }
 
-/* ========================================== */
-/* NOVOS ESTILOS para a Página de Detalhes   */
-/* ========================================== */
-
-/* O container principal usa o estilo de "card" como base */
+ 
 .game-detail-container {
     background-color: var(--cor-card);
     border: 1px solid var(--cor-borda);
@@ -80,9 +74,9 @@ main {
     color: var(--cor-texto-principal);
 }
 
-/* Título principal do jogo */
+ 
 .game-detail-container h2 {
-    color: var(--cor-titulo-categoria); /* Reusa a cor do título */
+    color: var(--cor-titulo-categoria);  
     font-size: 2.5em;
     margin-top: 0;
     margin-bottom: 20px;
@@ -90,10 +84,10 @@ main {
     padding-bottom: 15px;
 }
 
-/* Layout para Imagem + Detalhes */
+ 
 .game-main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Imagem maior (2/3), detalhes (1/3) */
+    grid-template-columns: 2fr 1fr;  
     gap: 25px;
     margin-bottom: 30px;
 }
@@ -105,13 +99,13 @@ main {
     object-fit: cover;
 }
 
-/* Caixa de Metadados (Detalhes) */
+ 
 .game-meta {
-    background-color: var(--cor-fundo); /* Fundo um pouco mais escuro para destaque */
+    background-color: var(--cor-fundo);  
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--cor-borda);
-    height: fit-content; /* Faz a caixa ter a altura do conteúdo */
+    height: fit-content;  
 }
 
 .game-meta h3 {
@@ -136,10 +130,10 @@ main {
 .game-meta li strong {
     color: var(--cor-texto-principal);
     display: inline-block;
-    min-width: 110px; /* Alinha os valores */
+    min-width: 110px;  
 }
 
-/* Títulos das seções de Descrição e Galeria */
+ 
 .game-description h3,
 .game-gallery h3 {
     color: var(--cor-titulo-categoria);
@@ -150,14 +144,13 @@ main {
     margin-bottom: 15px;
 }
 
-/* Parágrafos da descrição */
+ 
 .game-description p {
     color: var(--cor-texto-secundario);
     font-size: 16px;
     line-height: 1.7;
 }
-
-/* Grid da Galeria de Imagens */
+ 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -177,14 +170,14 @@ main {
     border-color: var(--cor-destaque-tag);
 }
 
-/* === Responsividade para Celulares === */
+ 
 @media (max-width: 768px) {
     .game-main-content {
-        grid-template-columns: 1fr; /* Empilha a imagem e os detalhes */
+        grid-template-columns: 1fr;  
     }
 
     .game-meta li strong {
-        min-width: 90px; /* Ajusta alinhamento para telas menores */
+        min-width: 90px;  
     }
 
     .gallery-grid {
